@@ -12,7 +12,23 @@
 		E9F4A6D72508D79A002EDC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4A6D52508D79A002EDC02 /* Main.storyboard */; };
 		E9F4A6D92508D79B002EDC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F4A6D82508D79B002EDC02 /* Assets.xcassets */; };
 		E9F4A6DC2508D79B002EDC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4A6DA2508D79B002EDC02 /* LaunchScreen.storyboard */; };
+		E9F4A6FE2508F8D8002EDC02 /* Blurberry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */; };
+		E9F4A6FF2508F8D8002EDC02 /* Blurberry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9F4A7002508F8D8002EDC02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9F4A6FF2508F8D8002EDC02 /* Blurberry.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9F4A6CD2508D79A002EDC02 /* Blurberry-Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blurberry-Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		E9F4A6D82508D79B002EDC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9F4A6DB2508D79B002EDC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F4A6DD2508D79B002EDC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Blurberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F4A6FE2508F8D8002EDC02 /* Blurberry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				E9F4A6CE2508D79A002EDC02 /* Blurberry-Demo-iOS */,
 				E9F4A6B32508D4D9002EDC02 /* Products */,
+				E9F4A6FC2508F8D8002EDC02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,14 @@
 			path = "Blurberry-Demo-iOS";
 			sourceTree = "<group>";
 		};
+		E9F4A6FC2508F8D8002EDC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 				E9F4A6C92508D79A002EDC02 /* Sources */,
 				E9F4A6CA2508D79A002EDC02 /* Frameworks */,
 				E9F4A6CB2508D79A002EDC02 /* Resources */,
+				E9F4A7002508F8D8002EDC02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cannedapp.Blurberry-Demo-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cannedapp.blurberry-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cannedapp.Blurberry-Demo-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cannedapp.blurberry-demo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

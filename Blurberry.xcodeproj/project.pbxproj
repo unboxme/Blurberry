@@ -11,7 +11,7 @@
 		E9F4A6A42508D016002EDC02 /* Blurberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A69D2508D016002EDC02 /* Blurberry.swift */; };
 		E9F4A6A52508D016002EDC02 /* VisualEffectView+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */; };
 		E9F4A6A62508D016002EDC02 /* VisualEffectView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A6A02508D016002EDC02 /* VisualEffectView+Public.swift */; };
-		E9F4A6A72508D016002EDC02 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F4A6A22508D016002EDC02 /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E9F4A6A72508D016002EDC02 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F4A6A22508D016002EDC02 /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F4A6A82508D016002EDC02 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A6A32508D016002EDC02 /* NSObject+Extension.m */; };
 /* End PBXBuildFile section */
 
