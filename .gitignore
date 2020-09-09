@@ -1,0 +1,36 @@
+# Xcode
+#
+build/
+DerivedData
+xcuserdata
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+*.hmap
+*.ipa
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.swp
+*.xccheckout
+*.xcuserstate
+*~.nib
+
+# OS X temporary files
+#
+.DS_Store
+.Trashes
+.swp
+
+# AppCode
+#
+.idea/
+
+# CocoaPods
+#
+*.dblite
+Pods/
