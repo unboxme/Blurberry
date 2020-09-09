@@ -14,6 +14,7 @@
 		E9F4A6DC2508D79B002EDC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4A6DA2508D79B002EDC02 /* LaunchScreen.storyboard */; };
 		E9F4A6FE2508F8D8002EDC02 /* Blurberry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */; };
 		E9F4A6FF2508F8D8002EDC02 /* Blurberry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9F4A7022508FA52002EDC02 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A7012508FA52002EDC02 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,7 @@
 		E9F4A6DB2508D79B002EDC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F4A6DD2508D79B002EDC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F4A6FD2508F8D8002EDC02 /* Blurberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Blurberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F4A7012508FA52002EDC02 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +75,13 @@
 		E9F4A6CE2508D79A002EDC02 /* Blurberry-Demo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E9F4A6DD2508D79B002EDC02 /* Info.plist */,
 				E9F4A6CF2508D79A002EDC02 /* AppDelegate.swift */,
 				E9F4A6D32508D79A002EDC02 /* ViewController.swift */,
+				E9F4A7012508FA52002EDC02 /* Button.swift */,
 				E9F4A6D52508D79A002EDC02 /* Main.storyboard */,
-				E9F4A6D82508D79B002EDC02 /* Assets.xcassets */,
 				E9F4A6DA2508D79B002EDC02 /* LaunchScreen.storyboard */,
-				E9F4A6DD2508D79B002EDC02 /* Info.plist */,
+				E9F4A6D82508D79B002EDC02 /* Assets.xcassets */,
 			);
 			path = "Blurberry-Demo-iOS";
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F4A6D42508D79A002EDC02 /* ViewController.swift in Sources */,
+				E9F4A7022508FA52002EDC02 /* Button.swift in Sources */,
 				E9F4A6D02508D79A002EDC02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

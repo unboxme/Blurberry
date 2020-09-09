@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  Button.swift
 //  Blurberry-Demo-iOS
 //
 //  Created by Pavel Puzyrev on 09.09.2020.
@@ -26,13 +26,48 @@
 
 import UIKit
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
+@IBDesignable
+final class Button: UIButton {
+    
+    @IBInspectable var color: UIColor?
+    @IBInspectable var providedColor: UIColor?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setup()
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setup()
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            UIView.animate(withDuration: 0.25) { [unowned self] in
+                self.alpha = self.isHighlighted ? 0.5 : 1.0
+            }
+        }
+    }
+    
+    private func setup() {
+        guard let color = color else {
+            return
+        }
+        
+        setTitleColor(color, for: .normal)
+        layer.borderColor = color.cgColor
+        layer.borderWidth = 2.0
+        layer.cornerRadius = 8.0
     }
 }
-
