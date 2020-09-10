@@ -132,7 +132,7 @@ NS_ASSUME_NONNULL_BEGIN
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en-US"];
     NSString *firstChar = [getterMethodName substringToIndex:1];
     NSString *folded = [firstChar stringByFoldingWithOptions:NSDiacriticInsensitiveSearch locale:locale];
-    NSString *pascalCasedResult = [[folded uppercaseString] stringByAppendingString:[getterMethodName substringFromIndex:1]];
+    NSString *pascalCasedResult = [folded.uppercaseString stringByAppendingString:[getterMethodName substringFromIndex:1]];
 
     return [NSString stringWithFormat:@"set%@:", pascalCasedResult];
 }
