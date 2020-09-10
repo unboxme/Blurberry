@@ -33,12 +33,14 @@ end
 ## Next Steps
 
 - [ ] iOS 10, 11, 12 support
-- [ ] Other platform support (such as maxOS)
+- [ ] Other platform support (such as macOS)
 - [ ] Remove ObjC code or make it private
+- [ ] Add manager to check blur availability and other service info
+- [ ] Hide private API class names, method names, etc.
 
 ## Disclaimer
 
-This framework uses private API — keep in mind it before submitting to the AppStore.
+This framework uses private API, so just keep in mind it before submitting to the AppStore.
 
 ## Requirements
 
