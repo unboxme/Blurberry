@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9F4A6842508C9E7002EDC02 /* Blurberry.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F4A6822508C9E7002EDC02 /* Blurberry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F4A6A42508D016002EDC02 /* Blurberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A69D2508D016002EDC02 /* Blurberry.swift */; };
+		E9F4A6A52508D016002EDC02 /* VisualEffectView+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */; };
+		E9F4A6A62508D016002EDC02 /* VisualEffectView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A6A02508D016002EDC02 /* VisualEffectView+Public.swift */; };
+		E9F4A6A72508D016002EDC02 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F4A6A22508D016002EDC02 /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9F4A6A82508D016002EDC02 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F4A6A32508D016002EDC02 /* NSObject+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9F4A67F2508C9E7002EDC02 /* Blurberry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blurberry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F4A6822508C9E7002EDC02 /* Blurberry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blurberry.h; sourceTree = "<group>"; };
+		E9F4A6832508C9E7002EDC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F4A69D2508D016002EDC02 /* Blurberry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blurberry.swift; sourceTree = "<group>"; };
+		E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectView+Internal.swift"; sourceTree = "<group>"; };
+		E9F4A6A02508D016002EDC02 /* VisualEffectView+Public.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisualEffectView+Public.swift"; sourceTree = "<group>"; };
+		E9F4A6A22508D016002EDC02 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		E9F4A6A32508D016002EDC02 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9F4A67C2508C9E7002EDC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9F4A6752508C9E7002EDC02 = {
+			isa = PBXGroup;
+			children = (
+				E9F4A6812508C9E7002EDC02 /* Sources */,
+				E9F4A6802508C9E7002EDC02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9F4A6802508C9E7002EDC02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A67F2508C9E7002EDC02 /* Blurberry.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9F4A6812508C9E7002EDC02 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A6822508C9E7002EDC02 /* Blurberry.h */,
+				E9F4A69C2508D016002EDC02 /* General */,
+				E9F4A69E2508D016002EDC02 /* Views */,
+				E9F4A6A12508D016002EDC02 /* Extensions */,
+				E9F4A6832508C9E7002EDC02 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E9F4A69C2508D016002EDC02 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A69D2508D016002EDC02 /* Blurberry.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		E9F4A69E2508D016002EDC02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */,
+				E9F4A6A02508D016002EDC02 /* VisualEffectView+Public.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9F4A6A12508D016002EDC02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4A6A22508D016002EDC02 /* NSObject+Extension.h */,
+				E9F4A6A32508D016002EDC02 /* NSObject+Extension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9F4A67A2508C9E7002EDC02 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F4A6A72508D016002EDC02 /* NSObject+Extension.h in Headers */,
+				E9F4A6842508C9E7002EDC02 /* Blurberry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9F4A67E2508C9E7002EDC02 /* Blurberry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F4A6872508C9E7002EDC02 /* Build configuration list for PBXNativeTarget "Blurberry" */;
+			buildPhases = (
+				E9F4A67A2508C9E7002EDC02 /* Headers */,
+				E9F4A67B2508C9E7002EDC02 /* Sources */,
+				E9F4A67C2508C9E7002EDC02 /* Frameworks */,
+				E9F4A67D2508C9E7002EDC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blurberry;
+			productName = Blurberry;
+			productReference = E9F4A67F2508C9E7002EDC02 /* Blurberry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9F4A6762508C9E7002EDC02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Pavel Puzyrev";
+				TargetAttributes = {
+					E9F4A67E2508C9E7002EDC02 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = E9F4A6792508C9E7002EDC02 /* Build configuration list for PBXProject "Blurberry" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9F4A6752508C9E7002EDC02;
+			productRefGroup = E9F4A6802508C9E7002EDC02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F4A67E2508C9E7002EDC02 /* Blurberry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9F4A67D2508C9E7002EDC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9F4A67B2508C9E7002EDC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F4A6A62508D016002EDC02 /* VisualEffectView+Public.swift in Sources */,
+				E9F4A6A52508D016002EDC02 /* VisualEffectView+Internal.swift in Sources */,
+				E9F4A6A42508D016002EDC02 /* Blurberry.swift in Sources */,
+				E9F4A6A82508D016002EDC02 /* NSObject+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9F4A6852508C9E7002EDC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9F4A6862508C9E7002EDC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9F4A6882508C9E7002EDC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22BDH96YAS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cannedapp.blurberry;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9F4A6892508C9E7002EDC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 22BDH96YAS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cannedapp.blurberry;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9F4A6792508C9E7002EDC02 /* Build configuration list for PBXProject "Blurberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F4A6852508C9E7002EDC02 /* Debug */,
+				E9F4A6862508C9E7002EDC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F4A6872508C9E7002EDC02 /* Build configuration list for PBXNativeTarget "Blurberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F4A6882508C9E7002EDC02 /* Debug */,
+				E9F4A6892508C9E7002EDC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9F4A6762508C9E7002EDC02 /* Project object */;
+}
