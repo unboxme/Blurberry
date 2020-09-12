@@ -6,6 +6,8 @@ Transparent blur using UIVisualEffectView without subclassing.
 
 [[video demo]](https://vimeo.com/457206677)
 
+[[appetize demo]](https://appetize.io/app/u2udhgwh0cgm12at0rmgjxtphr)
+
 ## Features
 - Based on UIVisualEffectView
 - Supports **iOS 14** and animation blocks
