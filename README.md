@@ -8,7 +8,7 @@ Transparent blur using UIVisualEffectView without subclassing.
 
 ## Features
 - Based on UIVisualEffectView
-- Supports iOS 14 and animation blocks
+- Supports **iOS 14** and animation blocks
 - Super safe and super easy
 
 ## Usage
