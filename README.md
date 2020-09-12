@@ -1,4 +1,10 @@
-Transparent blur using UIVisualEffectView without subclassing
+# Blurberry
+
+Transparent blur using UIVisualEffectView without subclassing.
+
+![GIF Demo](https://github.com/unboxme/Blurberry/blob/master/Resources/demo.gif)
+
+[[video demo]](https://vimeo.com/457206677)
 
 ## Features
 - Based on UIVisualEffectView
