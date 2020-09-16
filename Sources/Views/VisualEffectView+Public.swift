@@ -30,23 +30,43 @@ public extension BlurWrapper where Base: UIVisualEffectView {
 
     var radius: CGFloat {
         get {
-            gaussianBlurFilter?.dictionaryValue(getter: "requestedValues")?["inputRadius"] as? CGFloat ?? 0.0
+            if #available(iOS 13, *) {
+                return gaussianBlurFilter?.dictionaryValue(getter: "requestedValues")?["inputRadius"] as? CGFloat ?? 0.0
+            } else {
+                return blurEffect?.valueSafe(key: "blurRadius") as? CGFloat ?? 0.0
+            }
         }
         set {
             prepareForChanges()
-            gaussianBlurFilter?.setObjectInDictionary(object: newValue, key: "inputRadius", getter: "requestedValues")
+            
+            if #available(iOS 13, *) {
+                gaussianBlurFilter?.setObjectInDictionary(object: newValue, key: "inputRadius", getter: "requestedValues")
+            } else {
+                updateBlurEffect(blurRadius: newValue, tintColor: tintColor)
+            }
+            
             applyChanges()
         }
     }
 
     var tintColor: UIColor? {
         get {
-            sourceOverEffect?.colorValue(getter: "color")
+            if #available(iOS 13, *) {
+                return sourceOverEffect?.colorValue(getter: "color")
+            } else {
+                return blurEffect?.colorValue(getter: "colorTint")
+            }
         }
         set {
             prepareForChanges()
-            sourceOverEffect?.setValueUsingSetter(value: newValue, getter: "color")
-            sourceOverEffect?.callMethod(named: "applyRequestedEffectToView:", with: overlayView)
+            
+            if #available(iOS 13, *) {
+                sourceOverEffect?.setValueUsingSetter(value: newValue, getter: "color")
+                sourceOverEffect?.callMethod(named: "applyRequestedEffectToView:", with: overlayView)
+            } else {
+                updateBlurEffect(blurRadius: radius, tintColor: newValue)
+            }
+            
             applyChanges()
         }
     }

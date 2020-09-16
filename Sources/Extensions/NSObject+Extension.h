@@ -47,6 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
                        forKey:(NSString *)key
                   getterNamed:(NSString *)getterName NS_SWIFT_NAME(setObjectInDictionary(object:key:getter:));
 
+- (nullable id)valueSafeForKey:(NSString *)key NS_SWIFT_NAME(valueSafe(key:));
+- (void)setValueSafe:(id)value forKey:(NSString *)key NS_SWIFT_NAME(setValueSafe(value:key:));
+
 #pragma mark *** Methods calling ***
 
 - (void)callMethodNamed:(NSString *)methodName NS_SWIFT_NAME(callMethod(named:));
