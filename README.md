@@ -31,7 +31,7 @@ Don't forget to set a `tintColor` value, otherwise it will be 30% white like `UI
 
 Add the Blurberry pod to your Podfile:
 ```ruby
-platform :ios, '13.0'
+platform :ios, '10.0'
 
 use_frameworks!
 
