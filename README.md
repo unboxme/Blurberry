@@ -23,6 +23,8 @@ visualEffectView.blur.radius = 5.0
 visualEffectView.blur.tintColor = .clear
 ```
 
+Don't forget to set a `tintColor` value, otherwise it will be 30% white like `UIBlurEffect.Style.Light` by default.
+
 ## Installation
 
 ### Cocoapods
@@ -40,7 +42,7 @@ end
 
 ## Next Steps
 
-- [ ] iOS 10, 11, 12 support
+- [x] iOS 10, 11, 12 support
 - [ ] Other platform support (such as macOS)
 - [ ] Remove ObjC code or make it private
 - [ ] Add manager to check blur availability and other service info
@@ -52,5 +54,5 @@ This framework uses private API, so just keep in mind it before submitting to th
 
 ## Requirements
 
-- iOS 13.0+
+- iOS 10.0+
 - Swift 5
