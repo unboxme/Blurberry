@@ -82,6 +82,22 @@ NS_ASSUME_NONNULL_BEGIN
     [self callMethodNamed:[self setterMethodName:getterName] withObject:[dictionary copy]];
 }
 
+- (nullable id)valueSafeForKey:(NSString *)key {
+    @try {
+        return [self valueForKey:key];
+    } @catch (NSException *exception) {
+        return nil;
+    }
+}
+
+- (void)setValueSafe:(id)value forKey:(NSString *)key {
+    @try {
+        [self setValue:value forKey:key];
+    } @catch (NSException *exception) {
+
+    }
+}
+
 #pragma mark *** Methods calling ***
 
 - (void)callMethodNamed:(NSString *)methodName {

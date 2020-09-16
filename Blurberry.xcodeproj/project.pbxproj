@@ -76,8 +76,8 @@
 		E9F4A69E2508D016002EDC02 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */,
 				E9F4A6A02508D016002EDC02 /* VisualEffectView+Public.swift */,
+				E9F4A69F2508D016002EDC02 /* VisualEffectView+Internal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

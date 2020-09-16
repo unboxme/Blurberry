@@ -27,6 +27,8 @@
 import UIKit
 
 internal extension BlurWrapper where Base: UIVisualEffectView {
+    
+    // MARK: iOS 13, 14
 
     var backdropView: UIView? {
         base.subviews.first {
@@ -51,13 +53,37 @@ internal extension BlurWrapper where Base: UIVisualEffectView {
             $0.stringValue(getter: "filterType") == "sourceOver"
         }
     }
-
+    
+    // MARK: iOS 10, 11, 12
+    
+    var blurEffect: NSObject? {
+        guard let effect = base.effect, type(of: effect) == NSClassFromString("_UICustomBlurEffect") else {
+            return nil
+        }
+        return base.effect
+    }
+    
+    func updateBlurEffect(blurRadius: CGFloat, tintColor: UIColor?) {
+        let effect = (NSClassFromString("_UICustomBlurEffect") as? UIBlurEffect.Type)?.init()
+        effect?.setValueSafe(value: blurRadius, key: "blurRadius")
+        effect?.setValueSafe(value: tintColor ?? UIColor(white: 1.0, alpha: 0.3), key: "colorTint")
+        effect?.setValueSafe(value: 1.0, key: "scale")
+        effect?.setValueSafe(value: 1.0, key: "colorTintAlpha")
+        base.effect = effect
+    }
+    
+    // MARK: Changes
+    
     func prepareForChanges() {
-        base.effect = UIBlurEffect(style: .light)
-        gaussianBlurFilter?.setIVarValue(value: 1.0, getter: "requestedScaleHint")
+        if #available(iOS 13, *) {
+            base.effect = UIBlurEffect(style: .light)
+            gaussianBlurFilter?.setIVarValue(value: 1.0, getter: "requestedScaleHint")
+        }
     }
 
     func applyChanges() {
-        backdropView?.callMethod(named: "applyRequestedFilterEffects")
+        if #available(iOS 13, *) {
+            backdropView?.callMethod(named: "applyRequestedFilterEffects")
+        }
     }
 }
